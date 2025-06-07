@@ -9,7 +9,11 @@ export default function WidgetSm() {
       <ul className="widgetSmList">
         {newMembers.map((user) => (
           <li key={user.id} className="widgetSmListItem">
-            <img src={user.img} className="widgetSmImg" />
+            <img
+              src={user.img}
+              className="widgetSmImg"
+              alt="عکس پروفایل کاربر"
+            />
             <div className="widgetSmUser">
               <span className="widgetSmUserName">{user.username}</span>
               <span className="widgetSmUserTitle">{user.title}</span>
